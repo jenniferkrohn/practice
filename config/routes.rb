@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'about' => "welcome#about" # shorten the URL so deleted the welcome/about
 
+  get 'contacts' => 'welcome#contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

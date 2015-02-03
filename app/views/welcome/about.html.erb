@@ -18,3 +18,8 @@
 		<%= "Perfectly normal!" %>
 
 	<% end %>
+<p>
+<!-- <%= link_to "Blue", about_path, class: "btn btn-primary" %> -->
+<%= link_to "Blue", {controller: "welcome", action: "about", color: "blue"}, class: "btn btn-primary" %>
+<%= link_to "Red", {controller: "welcome", action: "about", color: "red"}, class: "btn btn-danger" %>
+</p>
