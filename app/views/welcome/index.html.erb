@@ -1,0 +1,25 @@
+<h1>HOME, although it's nice to get away</h1>
+<p>by Jennifer Krohn </p>
+
+<p>I'm from <%= @homeland %>.</p>
+<!-- Set this in the welcome controller. Set under index controller so can't use in the about page-->
+<!-- Must have the = for the value to show. -->
+<%= image_tag "wyoming.jpg" %>
+<p></p>
+<%= @countries %>
+
+<ul>
+	<% @countries.each do |country| %>
+		<li><%= country %><li>
+	<% end %>
+</ul>
+
+	<% @travel_pics.each do |pic| %>
+		<%= image_tag pic %>
+	<% end %>	
+	
+
+<!-- <%= image_tag "australia.jpeg", alt: "Australia", id: "a1", class: "country" %>
+<p></p>
+<%= image_tag "sweden.jpg", alt: "Stolkholm, Sweden", id: "s1", class: "country" %>
+<%= image_tag "kenya.jpeg" %>

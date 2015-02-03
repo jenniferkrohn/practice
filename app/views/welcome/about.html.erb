@@ -1,0 +1,20 @@
+<style>
+	body {
+		background: <%= @color %>;
+	}
+</style>
+
+
+<h1>Welcome to our travels</h1>
+<p>This site will contain travel information</p>
+
+<p> My favorite color is <%= @color %></p>
+<!-- When enter this @color here, it will read from the URL so it can be any color/thing/word. It is case sensitive -->
+<p>My shoe size is <%= @size %></p>
+	<% if @size > 12 %>
+		<%= "Your feet are HUGE!!!" %>
+
+		<% else %>
+		<%= "Perfectly normal!" %>
+
+	<% end %>
